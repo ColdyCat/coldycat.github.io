@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Jost:wght@900&display=swap');
+
+html {
+    color: var(--font-color);
+    font-family: Fredoka;
+    background: linear-gradient(var(--gradient-color) var(--gradient-offset), var(--primary-color) 20%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+html.light {
+    --primary-color: #eee;
+    --gradient-color: #cde;
+    --gradient-offset: 0%;
+    --darker-color: #eee;
+    --shadows: #0002;
+    --border: #cde;
+    --darker-border: #bfbfbf;
+    --font-color: #666;
+    --font-hover-color: #9ac;
+
+    --waves: url("./light-wave.svg");
+}
+
+html.dark {
+    --primary-color: #223;
+    --gradient-color: #000;
+    --gradient-offset: -25%;
+    --darker-color: #252535;
+    --shadows: #0005;
+    --border: #334;
+    --darker-border: #353545;
+    --font-color: white;
+    --font-hover-color: #57a;
+
+    --waves: url("./dark-wave.svg");
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background: var(--waves) repeat-x, var(--waves) repeat-x, var(--waves) repeat-x;
+    background-position: 3200px 80vh, -800px 70vh, 400px 65vh;
+    z-index: -1;
+    animation: wave 100s linear infinite;
+}
+
+@keyframes wave {
+    100% {
+        background-position: -3200px 80vh, 2400px 70vh, -1200px 65vh;
+    }
+}
+
+.body {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 60%;
+    max-width: 90vw;
+    min-height: 480px;
+    max-height: 720px;
+    aspect-ratio: 4/5;
+    background-color: var(--darker-color);
+    border: solid var(--border) 5px;
+    border-radius: 8px;
+    box-shadow: var(--shadows) 10px 10px 3px;
+}
+
+.buttons {
+    display: flex;
+    align-items: end;
+    margin-top: -20px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.nickname {
+    margin-top: 2%;
+    font-size: 48px;
+    font-family: Jost;
+    display: flex;
+    margin: auto;
+    align-self: center;
+    cursor: pointer;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    min-height: 48px;
+    max-height: 72px;
+    height: 10%;
+    width: 45%;
+    border: var(--darker-border) solid 3px;
+    border-radius: 12px;
+    margin: 0 2% 2% 2%;
+}
+
+.center {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    margin: auto;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button>div>span {
+    font-size: 20px;
+}
+
+.button:hover>div>span {
+    text-decoration: underline;
+}
+
+.discord {
+    width: 95%;
+}
+
+object {
+    display: inline-block;
+    max-height: 90%;
+    aspect-ratio: 1;
+}
+
+img {
+    vertical-align: middle;
+}
+
+#dpfp {
+    display: inline-block;
+    align-self: center;
+    aspect-ratio: 1;
+    width: 10%;
+    min-width: 128px;
+    margin-top: -15%;
+    border-radius: 10%;
+    border: var(--border) solid 5px;
+}
+
+footer {
+    text-align: center;
+}
+
+.bio {
+    width: 94%;
+    height: 100%;
+    vertical-align: middle;
+    border-top: var(--border) solid 5px;
+    padding-top: 5px;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 125%;
+}
+
+.tinted {
+    color: #fff5;
+    font-size: 12px;
+}
+
+#themeIcon {
+    display: inline-block;
+    align-self: center;
+    margin-left: 10px;
+    width: 44px;
+    height: 44px;
+    pointer-events: none;
+}
+
+a {
+    color: var(--font-color);
+}
+
+a:hover {
+    color: var(--font-hover-color);
+}

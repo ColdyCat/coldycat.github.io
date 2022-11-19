@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+
+html {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  color: whitesmoke;
+  font-family: "Comfortaa";
+  text-align: center;
+  font-size: 200%;
+  line-height: 50%;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  margin: auto;
+}
+.center {
+  margin: auto;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px 3px #000a;
+  background-color: #000a;
+  border-radius: 8px;
+}
+.silly {
+  display: block;
+  width: 320px;
+  height: 50px;
+  border-bottom: solid #fff 5px;
+}
+
+@media screen and (orientation: landscape) {
+  .card {
+    width: 640px;
+    height: 480px;
+  }
+}
+@media screen and (orientation: portrait) {
+  .card {
+    width: 480px;
+    height: 640px;
+  }
+}
