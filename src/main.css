@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Jost:wght@900&display=swap');
+@import url('../static/fonts/Whitney/family.css');
 
 html {
     color: var(--font-color);
-    font-family: Fredoka;
+    font-family: Whitney;
+    font-weight: 500;
     background: linear-gradient(var(--gradient-color) var(--gradient-offset), var(--primary-color) 20%);
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -20,7 +22,6 @@ html.light {
     --darker-border: #bfbfbf;
     --font-color: #666;
     --font-hover-color: #9ac;
-
     --waves: url("./light-wave.svg");
 }
 
@@ -34,7 +35,6 @@ html.dark {
     --darker-border: #353545;
     --font-color: white;
     --font-hover-color: #57a;
-
     --waves: url("./dark-wave.svg");
 }
 
@@ -81,12 +81,6 @@ body {
     box-shadow: var(--shadows) 10px 10px 3px;
 }
 
-.buttons {
-    display: flex;
-    align-items: end;
-    margin-top: -20px;
-}
-
 .profile {
     display: flex;
     flex-direction: column;
@@ -94,12 +88,19 @@ body {
 
 .nickname {
     margin-top: 2%;
-    font-size: 48px;
+    font-size: 3rem;
     font-family: Jost;
     display: flex;
     margin: auto;
     align-self: center;
     cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    align-items: end;
+    margin-top: -20px;
+    padding: .5rem;
 }
 
 .button {
@@ -108,10 +109,10 @@ body {
     min-height: 48px;
     max-height: 72px;
     height: 10%;
-    width: 45%;
+    width: 100%;
     border: var(--darker-border) solid 3px;
     border-radius: 12px;
-    margin: 0 2% 2% 2%;
+    margin: 1%;
 }
 
 .center {
@@ -130,11 +131,8 @@ body {
 }
 
 .button:hover>div>span {
-    text-decoration: underline;
-}
-
-.discord {
-    width: 95%;
+    text-shadow: var(--font-hover-color) 0 0 4px;
+    text-decoration: underline 2px;
 }
 
 object {

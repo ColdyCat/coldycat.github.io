@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coldy</title>
+    <link rel="stylesheet" href="./src/main.css">
+  </head>
+
+  <body>
+    <div class=body>
+      <div class=card>
+        <div class=profile>
+          <img id=dpfp><br>
+          <span class=nickname onclick="switchTheme()">Coldy <object data="./icons/light.svg" id="themeIcon"></object></span>
+        </div>
+        <div class=bio>
+          Coldy, the Liquid, Winter Cat<br>
+          Asexual, He/Him<br>
+          Little fluffy coder and artist.<br>
+          Like gamedev, wholesome arts and ofc music.<br>
+          Hate new-gen lgbt, fursuits and nsfw.<br>
+        </div>
+        <div class=buttons>
+          <div class="button github" onclick='href("https://github.com/ColdyCat")'>
+            <div class=center>
+              <object data="./icons/github.svg"></object>
+              <span>GitHub</span>
+            </div>
+          </div>
+          <!-- <div class="button twitter" onclick='href("https://twitter.com/ColdyTheCat")'>
+            <div class=center>
+              <object data="./icons/twitter.svg"></object>
+              <span>Twitter</span>
+            </div>
+          </div> -->
+          <div class="button discord" onclick='copy()'>
+            <div class=center>
+              <object data="./icons/discord.svg"></object>
+              <span id=nickname>Loading...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="footer">Made with love by Ralsi 💚</span>
+    </div>
+  </body>
+  <script src="./src/main.js"></script>
+
+</html>
