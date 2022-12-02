@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
 @font-face {
-    font-family: Whitney;
-    src: url('https://coldycat.github.io/static/fonts/Whitney/Book.woff') format('woff');
-}
-@font-face {
-    font-family: Whitney Light;
-    src: url('https://coldycat.github.io/static/fonts/Whitney/Light.woff') format('woff');
-}
-@font-face {
     font-family: Whitney Medium;
     src: url('https://coldycat.github.io/static/fonts/Whitney/Medium.woff') format('woff');
 }
@@ -15,19 +7,7 @@
     font-family: Whitney Bold;
     src: url('https://coldycat.github.io/static/fonts/Whitney/Bold.woff') format('woff');
 }
-@font-face {
-    font-family: Uni Sans;
-    src: url('https://coldycat.github.io/static/fonts/UniSans.otf') format('opentype');
-}
-body, .inputDefault-3FGxgL, .text-sm-normal-3Zj3Iv, .hovered-20u3oh, .content-2a4AW9, .content-2t8mBc, .children-1xdcWE *, .text-md-normal-304U3g, .descriptionStandalone-3ChjDk, .chatContent-3KubbW>div>div>div>ol>li>div>div>div {
-    font-family: Whitney, Noto Sans;
-}
-input, .title-2dsDLn, .content-2a4AW9, .text-sm-semibold-3TWn25, .contents-3ca1mk, .colorSwatchLabel-3wZl63, .sidebar-nqHbhN, .sectionTitle-3j2YI1, .sectionTitle-3j2YI1 {
-    font-family: Whitney Medium, Noto Sans;
-}
-.heading-lg-semibold-2Z_RS3, .eyebrow-Ejf06y, .eyebrow-132Xza, .titleText-1IEWzs, .nameTag-H6kSJ0 {
-    font-family: Whitney Bold, Noto Sans;
-}
-.titleWrapper-24Kyzc {
-    font-family: Uni Sans;
+:root {
+    --font-primary: Whitney Medium, Noto Sans;
+    --font-display: Whitney Bold, Noto Sans;
 }
